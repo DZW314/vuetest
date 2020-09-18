@@ -13,3 +13,15 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+new Vue({
+  el: '#test',
+  data: {
+    message: 'hello.'
+  },
+  methods: {
+    tt: function () {
+      alert('This is a test.')
+    }
+  }
+})
