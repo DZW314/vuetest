@@ -9,6 +9,11 @@
     <div id='test'>
       <p>{{ message }}</p>
       <button v-on:click='tt'>ClickME</button>
+      <span>
+        <input type='button' value=' - ' @click='sub'>
+        {{ num }}
+        <input type='button' value=' + ' @click='add'>
+      </span>
     </div>
     <div id="app"></div>
     <!-- built files will be auto injected -->

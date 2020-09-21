@@ -17,11 +17,26 @@ new Vue({
 new Vue({
   el: '#test',
   data: {
-    message: 'hello.'
+    message: 'hello.',
+    num: 1
   },
   methods: {
     tt: function () {
       alert('This is a test.')
+    },
+    add: function () {
+      if (this.num < 10) {
+        this.num += 1
+      } else {
+        alert('数值不能大于10！')
+      }
+    },
+    sub: function () {
+      if (this.num > 0) {
+        this.num -= 1
+      } else {
+        alert('数值不能小于0！')
+      }
     }
   }
 })
