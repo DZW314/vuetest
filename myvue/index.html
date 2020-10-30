@@ -6,13 +6,42 @@
     <title>myvue</title>
   </head>
   <body>
+    <div class="main">
+      <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1602494573951&di=de9fccaf5f235f9b6aceae4e73063c6a&imgtype=0&src=http%3A%2F%2Fa3.att.hudong.com%2F36%2F67%2F01200000032669136308677681861.jpg"
+    </div>
+    <div class="main">
+      <form action="" method="get" name="myfrom">
+        请选择游戏类别：
+        <select id="gameType" style="width: 120px">
+          <option>--游戏类别--</option>
+        </select>
+        <br/>
+        请选择游戏名称： 
+        <select id="gameName" style="width: 120px">
+          <option>--游戏名称--</option>
+        </select>
+        <br/>
+        <img src="https://c-ssl.duitang.com/uploads/item/201611/02/20161102230413_fet38.thumb.1000_0.jpeg">
+      </form>
+    </div>
     <div id='test'>
+      <li v-for='(item, i) in arr'>
+        vue语法の{{ item }} 
+      </li>
+      <hr/>
       <p>{{ message }}</p>
       <button v-on:click='tt'>ClickME</button>
       <span>
         <input type='button' value=' - ' @click='sub'>
         {{ num }}
         <input type='button' value=' + ' @click='add'>
+      </span>
+      <hr/>
+      <span>
+        <input type='button' value='<' @click= 'prev' v-show= 'index>0'>
+        <img :src= 'imgArr[index]'/>
+        <input type='button' value='>' @click= 'next' v-show= 'index<3'>
+        <p v-text='index+1+"/"+imgArr.length'></p>
       </span>
     </div>
     <div id="app"></div>
