@@ -23,6 +23,10 @@ Create a new branch named "test". Then push it to the github.
 Your branch is based on 'origin/test', but the upstream is gone.
   (use "git branch --unset-upstream" to fixup)
 
+fatal: The current branch test has no upstream branch.
+To push the current branch and set the remote as upstream, use
+    git push --set-upstream origin test
+
 #随即漫步的傻瓜
 #黑天鹅
 #反脆弱
