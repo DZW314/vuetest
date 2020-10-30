@@ -21,10 +21,12 @@ Create a new branch named "test". Then push it to the github.
     git push --delete origin xxx //删除远程上xxx的分支
 
 Your branch is based on 'origin/test', but the upstream is gone.
+
   (use "git branch --unset-upstream" to fixup)
 
 fatal: The current branch test has no upstream branch.
 To push the current branch and set the remote as upstream, use
+    
     git push --set-upstream origin test
 
 #随即漫步的傻瓜
