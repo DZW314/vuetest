@@ -29,10 +29,10 @@ To push the current branch and set the remote as upstream, use
     
     git push --set-upstream origin test
 
-#随即漫步的傻瓜
-#黑天鹅
-#反脆弱
-#非对称风险
+# 随即漫步的傻瓜
+# 黑天鹅
+# 反脆弱
+# 非对称风险
 
 
 
